@@ -1,0 +1,1 @@
+# WorldForge-baseline-manifest
