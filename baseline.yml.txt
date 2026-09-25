@@ -1,0 +1,145 @@
+worldforge_baseline:
+  baseline_version: "0.1.0"
+  status: "DRAFT"
+  created: "2026-09-24"
+
+runtime:
+  server_software:
+    name: "Paper"
+    version: "26.2"
+    build: "VERIFY"
+    stable: true
+    sha256: "7b7b3b43c009103e1971a0576c26f655a7dd9b56a0a2a4438e352c03a7fecd08"
+
+  java:
+    version: "VERIFY"
+    required_by_paper: "25"
+
+plugins:
+  approved:
+    - name: "LuckPerms"
+      version: "VERIFY"
+
+    - name: "DiscordSRV"
+      version: "1.30.5"
+
+    - name: "WorldEdit/FAWE"
+      version: "VERIFY"
+
+    - name: "WorldGuard"
+      version: "VERIFY"
+
+    - name: "PlaceholderAPI"
+      version: "VERIFY"
+
+    - name: "Prism"
+      version: "VERIFY"
+
+    - name: "LibertyBans"
+      version: "VERIFY"
+
+    - name: "CommandWhitelist"
+      version: "VERIFY"
+
+    - name: "MiniMOTD"
+      version: "VERIFY"
+
+    - name: "Plan"
+      version: "VERIFY"
+
+    - name: "FancyNPC"
+      version: "VERIFY"
+
+    - name: "FancyHolograms"
+      version: "VERIFY"
+
+custom_plugins:
+  - name: "WorldForge"
+    version: "VERIFY"
+    status: "approved"
+
+  - name: "WorldForgeItemGen"
+    version: "VERIFY"
+    status: "approved"
+
+  - name: "WorldForgeDiscord"
+    version: "VERIFY"
+    status: "approved"
+
+configs:
+  include:
+    - server.properties
+    - bukkit.yml
+    - spigot.yml
+    - paper-global.yml
+    - paper-world-defaults.yml
+    - plugins/LuckPerms/
+    - plugins/WorldGuard/
+    - plugins/DiscordSRV/
+    - plugins/WorldForge/
+    - plugins/WorldForgeDiscord/
+    - plugins/WorldForgeItemGen/
+    - plugins/LibertyBans/
+    - plugins/CommandWhitelist/
+    - plugins/MiniMOTD/
+
+schematics:
+  policy: "Production-ready only"
+
+  approved:
+    - name: "WorldForge Main Hub"
+      file: "worldforge_polished.schem"
+      category: "hub"
+      status: "approved"
+      sha256: "c1c84a226d9caabf43a2b40834d0a22e3127e72c758ed26c09fa88276aef74c8"
+
+    - name: "Water Edge Refined"
+      file: "water-edge-refined.schem"
+      category: "fixture"
+      status: "approved"
+      sha256: "891e41a4264e2c85c03a3c9c21f6a4ee596a9442e1e84e28231cbda0cf067be0"
+
+    - name: "Elevated Shard Refined"
+      file: "elevated-shard-refined.schem"
+      category: "fixture"
+      status: "approved"
+      sha256: "1ed0bafa37ef118368dfc6ae4a48ed5a40cd70cd4ce46b6b62f48eb025d808fd"
+
+    - name: "Flat Shard Refined"
+      file: "flat-shard-refined.schem"
+      category: "fixture"
+      status: "approved"
+      sha256: "5e52724fba4e8944248854c165ce6d32a4f7a8248b695f8e2019448ace7107dc"
+
+    - name: "Realm Core Refined"
+      file: "realm-core-refined.schem"
+      category: "fixture"
+      status: "approved"
+      sha256: "e1fbbf32aef2f17016b4576dc6bae4064c390f39cab1ef8fe0253f319a8593a1"
+
+    - name: "Structure Anchor Refined"
+      file: "structure-anchor-refined.schem"
+      category: "fixture"
+      status: "approved"
+      sha256: "5878ab3f14e933ec1525e57e606510b29c09337c828a2ad55af13dad454d0a54"
+
+  exclude:
+    - experiments
+    - unfinished builds
+    - abandoned revisions
+    - temporary test fixtures
+
+verification:
+  primary_server:
+    verified: false
+
+  secondary_local_server:
+    verified: false
+
+  manifest_match_required: true
+
+notes:
+  - "Do not add WIP content to this archive."
+  - "Only update this baseline after testing and approval."
+  - "Create a new baseline version when the approved environment changes."
+  - "Keep secrets and credentials out of the baseline archive."

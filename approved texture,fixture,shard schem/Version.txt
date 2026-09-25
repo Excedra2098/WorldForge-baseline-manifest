@@ -1,0 +1,11 @@
+WorldForge Fixture Bundle
+Bundle Version: 0.1.0
+
+WF-001 Fixture Version: 1.0.0
+
+Tested:
+Paper: ______
+FAWE: ______
+WorldEdit: ______
+Java: ______
+Minecraft: ______

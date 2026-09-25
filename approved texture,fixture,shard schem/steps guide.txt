@@ -1,0 +1,42 @@
+# WF-001 — Realm Core Schematic Placement Test
+
+## Purpose
+Verify that the Realm Core fixture produces the same placement/content
+behavior on a clean machine.
+
+## Requirements
+- Paper 1.xx.x
+- FAWE version x.x.x
+- WorldEdit/required dependency versions listed below
+
+## Fixture
+schematics/realm-core-test.schem
+
+## Setup
+
+1. Start a clean local Paper server.
+2. Install the listed required plugins.
+3. Copy realm-core-test.schem into the FAWE schematic directory.
+4. Join the server.
+5. Teleport to an empty test area.
+6. Run:
+
+//schem load realm-core-test
+//paste
+
+## Expected Result
+The Realm Core should appear as shown in expected.png.
+
+## Actual Bug
+Describe the incorrect blocks, placement, missing content, orientation,
+palette issue, etc.
+
+See actual.png.
+
+## Reproduction Status
+
+EXCEDRA:
+[ ] Reproduced
+
+ZAEYRU:
+[ ] Reproduced on separate machine
